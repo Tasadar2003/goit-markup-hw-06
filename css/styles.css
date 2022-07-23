@@ -1,910 +1,972 @@
-                                                                                                          :root {
-                                                                                                             /* FONTS */
-                                                                                                             --main-fonts: "Roboto", sans-serif;
-                                                                                                             --secondary-font: "Raleway", sans-serif;
-                                                                                                             /* TXT CL */
-                                                                                                             --main-txt-cl: #212121;
-                                                                                                             --secondary-txt-cl: #FFFFFF;
-                                                                                                             --thirty-txt-cl: #2196F3;
-                                                                                                             --fourth-txt-cl: #757575;
-                                                                                                             /* BG CL */
-                                                                                                             --main-bg-cl: #23242C;
-                                                                                                             --secondary-bg-cl: #2196F3;
-                                                                                                             --thirty-bg-cl: #188CE8;
-                                                                                                             --fourth-bg-cl: #F5F4FA;
-                                                                                                             --fifth-bg-cl: #FFFFFF;
-                                                                                                             --sixth_bg-cl: #2F303A;
-                                                                                                             /* OTHERS */
-                                                                                                             --main-cl: #212121;
-                                                                                                             --secondary-cl: #FFFFFF;
-                                                                                                             --thirty-cl: #2196F3;
-                                                                                                             /* ICO CL */
-                                                                                                             --main-ico-cl: #757575;
-                                                                                                             --secondary-ico-cl: #2196F3;
-                                                                                                             --thirty-ico-cl: #FFFFFF;
-                                                                                                             --fourth-ico-cl: #AFB1B8;
-                                                                                                             /* таблиця для портфоліо */
-                                                                                                             --items: 3;
-                                                                                                             --indent: 30px;
-                                                                                                             /* ANIMATION */
-                                                                                                             --anim-slow: 600ms cubic-bezier(0.4, 0, 0.2, 1);
-                                                                                                             --anim-fast: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-                                                                                                         }
-                                                                                                         /* Styles SPECIAL */
-                                                                                                         
-                                                                                                         .no-scroll {
-                                                                                                             overflow: hidden;
-                                                                                                         }
-                                                                                                         /* ТІЛО ГОЛОВНОЇ СТОРІНКИ ТА ПОРТФОЛІО*/
-                                                                                                         
-                                                                                                         .body {
-                                                                                                             font-family: var(--main-fonts);
-                                                                                                             font-style: normal;
-                                                                                                         }
-                                                                                                         
-                                                                                                         li {
-                                                                                                             list-style-type: none;
-                                                                                                         }
-                                                                                                         
-                                                                                                         a {
-                                                                                                             text-decoration: none;
-                                                                                                         }
-                                                                                                         
-                                                                                                         ul,
-                                                                                                         div,
-                                                                                                         h2,
-                                                                                                         p {
-                                                                                                             margin: 0;
-                                                                                                             padding: 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         img {
-                                                                                                             width: 100%;
-                                                                                                             height: auto;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .container {
-                                                                                                             width: 1200px;
-                                                                                                             margin-left: auto;
-                                                                                                             margin-right: auto;
-                                                                                                             padding-left: 15px;
-                                                                                                             padding-right: 15px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .portfolio-main {
-                                                                                                             padding: 94px 0;
-                                                                                                         }
-                                                                                                         /* СТИЛЬ ЛОГОТИПА У ШАПЦІ САЙТУ */
-                                                                                                         
-                                                                                                         .lg {
-                                                                                                             font-family: var(--secondary-font);
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 26px;
-                                                                                                             line-height: 1.19;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: var(--thirty-txt-cl);
-                                                                                                             margin-top: 24px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .lg-txt {
-                                                                                                             color: var(--main-txt-cl);
-                                                                                                         }
-                                                                                                         /* СТИЛЬ ШАПКИ САЙТУ */
-                                                                                                         
-                                                                                                         header {
-                                                                                                             border-bottom: 1px solid #ECECEC;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .head-cont {
-                                                                                                             display: flex;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .nav-page {
-                                                                                                             display: flex;
-                                                                                                             margin-left: 93px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .navlink {
-                                                                                                             display: block;
-                                                                                                             font-weight: 500;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.14;
-                                                                                                             letter-spacing: 0.02em;
-                                                                                                             color: var(--main-txt-cl);
-                                                                                                             transition: color var(--anim-slow), background-color var(--anim-slow);
-                                                                                                             padding: 32px 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .nav-link {
-                                                                                                             margin-right: 50px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .nav-link:last-child {
-                                                                                                             margin-right: 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .navlink a:hover,
-                                                                                                         .navlink a:focus {
-                                                                                                             color: var(--thirty-txt-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .current {
-                                                                                                             position: relative;
-                                                                                                             color: var(--thirty-txt-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .current::after {
-                                                                                                             content: "";
-                                                                                                             position: absolute;
-                                                                                                             width: 100%;
-                                                                                                             height: 4px;
-                                                                                                             border-radius: 4px;
-                                                                                                             background: var(--thirty-cl);
-                                                                                                             left: 0;
-                                                                                                             bottom: 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .contacts {
-                                                                                                             display: flex;
-                                                                                                             margin-left: auto;
-                                                                                                             padding: 32px 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .head-mail,
-                                                                                                         .head-number {
-                                                                                                             font-weight: 500;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.14;
-                                                                                                             letter-spacing: 0.02em;
-                                                                                                             color: var(--fourth-txt-cl);
-                                                                                                             padding-right: 50px;
-                                                                                                             display: flex;
-                                                                                                             transition: color var(--anim-slow);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .head-number {
-                                                                                                             padding-right: 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .head-mail:hover,
-                                                                                                         .head-mail:focus,
-                                                                                                         .head-number:hover,
-                                                                                                         .head-number:focus {
-                                                                                                             color: var(--thirty-txt-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .icon-email,
-                                                                                                         .icon-tel {
-                                                                                                             margin-right: 10px;
-                                                                                                             fill: var(--main-ico-cl);
-                                                                                                             transition: fill var(--anim-slow);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .icon-email {
-                                                                                                             margin-top: 2px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .head-mail:hover>.icon-email,
-                                                                                                         .head-mail:focus>.icon-email,
-                                                                                                         .head-number:hover>.icon-tel,
-                                                                                                         .head-number:focus>.icon-tel {
-                                                                                                             fill: var(--secondary-ico-cl);
-                                                                                                         }
-                                                                                                         /* СТИЛЬ 1-Ї СЕКЦІЇ */
-                                                                                                         
-                                                                                                         .title {
-                                                                                                             background-color: var(--main-bg-cl);
-                                                                                                             background-image: url(../images/img-bg/main-img.png);
-                                                                                                             background-repeat: no-repeat;
-                                                                                                             background-position: center;
-                                                                                                             background-size: cover;
-                                                                                                             max-width: 1600px;
-                                                                                                             max-height: 600px;
-                                                                                                             display: flex;
-                                                                                                             flex-direction: column;
-                                                                                                             padding: 200px 0;
-                                                                                                             margin: 0 auto;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .main-title {
-                                                                                                             font-weight: 900;
-                                                                                                             font-size: 44px;
-                                                                                                             line-height: 1.36;
-                                                                                                             text-align: center;
-                                                                                                             letter-spacing: 0.06em;
-                                                                                                             text-transform: uppercase;
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                             margin: 0;
-                                                                                                             margin-bottom: 30px;
-                                                                                                             max-width: 696px;
-                                                                                                             margin-right: auto;
-                                                                                                             margin-left: auto;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .btn {
-                                                                                                             background-color: var(--secondary-bg-cl);
-                                                                                                             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.149);
-                                                                                                             border-radius: 4px;
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 16px;
-                                                                                                             line-height: 2;
-                                                                                                             text-align: center;
-                                                                                                             letter-spacing: 0.06em;
-                                                                                                             padding: 10px 32px;
-                                                                                                             margin-left: auto;
-                                                                                                             margin-right: auto;
-                                                                                                             cursor: pointer;
-                                                                                                             transition: background-color var(--anim-slow);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .btn:hover,
-                                                                                                         .btn:focus {
-                                                                                                             background-color: var(--thirty-bg-cl);
-                                                                                                             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                                                                                                             border-radius: 4px;
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 16px;
-                                                                                                             line-height: 2;
-                                                                                                             text-align: center;
-                                                                                                             letter-spacing: 0.06em;
-                                                                                                             padding: 10px 32px;
-                                                                                                         }
-                                                                                                         /* СТИЛЬ СЕКЦІЇ ПЕРЕВАГИ */
-                                                                                                         
-                                                                                                         .advantage {
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.14;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: var(--main-txt-cl);
-                                                                                                             padding: 94px 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .advan-list {
-                                                                                                             display: flex;
-                                                                                                             justify-content: space-between;
-                                                                                                             width: 1170px;
-                                                                                                             gap: 30px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .advan-item {
-                                                                                                             width: calc(100% / 3 - 30px);
-                                                                                                             margin: 0;
-                                                                                                             display: block;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .advan-ico {
-                                                                                                             width: 270px;
-                                                                                                             height: 120px;
-                                                                                                             background-color: var(--fourth-bg-cl);
-                                                                                                             margin-bottom: 30px;
-                                                                                                             display: flex;
-                                                                                                             justify-content: center;
-                                                                                                             align-items: center;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .advantage-ico {
-                                                                                                             width: 70px;
-                                                                                                             height: 70px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .advan-title {
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.14;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             text-transform: uppercase;
-                                                                                                             color: var(--main-txt-cl);
-                                                                                                             margin: 0;
-                                                                                                             margin-bottom: 10px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .advan-txt {
-                                                                                                             font-weight: 400;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.7;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: var(--fourth-txt-cl);
-                                                                                                             margin: 0;
-                                                                                                         }
-                                                                                                         /* СТИЛЬ СЕКЦІЇЇ ЧИМ МИ ЗАЙМАЄМОСЬ */
-                                                                                                         
-                                                                                                         .title-h2 {
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 36px;
-                                                                                                             line-height: 1.17;
-                                                                                                             text-align: center;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: var(--main-txt-cl);
-                                                                                                             padding-bottom: 50px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .work {
-                                                                                                             padding-bottom: 94px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .works {
-                                                                                                             display: flex;
-                                                                                                             margin: -15px;
-                                                                                                             margin-right: auto;
-                                                                                                             margin-left: auto;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .works:not(:last-child) {
-                                                                                                             margin: 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .worked {
-                                                                                                             position: relative;
-                                                                                                             display: flex;
-                                                                                                             justify-content: center;
-                                                                                                             align-items: center;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .work-img {
-                                                                                                             width: calc(100% / 3 - 30px);
-                                                                                                             margin: 15px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .work-name {
-                                                                                                             position: absolute;
-                                                                                                             top: 216px;
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.14;
-                                                                                                             text-align: center;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             text-transform: uppercase;
-                                                                                                             background: #2f303acc;
-                                                                                                             padding-top: 28px;
-                                                                                                             width: 360px;
-                                                                                                             height: 70px;
-                                                                                                             min-height: 16px;
-                                                                                                         }
-                                                                                                         /* СТИЛЬ СЕКЦІЇ НАША КОМАНДА */
-                                                                                                         
-                                                                                                         .team-list {
-                                                                                                             display: flex;
-                                                                                                             flex-wrap: wrap;
-                                                                                                             margin: -15px;
-                                                                                                             justify-content: center;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team {
-                                                                                                             background-color: var(--fourth-bg-cl);
-                                                                                                             padding: 94px 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team-list:not(:last-child) {
-                                                                                                             margin: 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team-item {
-                                                                                                             background-color: var(--fifth-bg-cl);
-                                                                                                             box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
-                                                                                                             border-radius: 0px 0px 4px 4px;
-                                                                                                             flex-basis: calc(100% / 4 - 30px);
-                                                                                                             margin: 15px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team-name {
-                                                                                                             padding: 30px 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team-title {
-                                                                                                             font-weight: 500;
-                                                                                                             font-size: 16px;
-                                                                                                             line-height: 1.18;
-                                                                                                             text-align: center;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: var(--main-txt-cl);
-                                                                                                             margin: 0;
-                                                                                                             margin-bottom: 10px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team-txt {
-                                                                                                             font-weight: 400;
-                                                                                                             font-size: 16px;
-                                                                                                             line-height: 1.18;
-                                                                                                             text-align: center;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: var(--fourth-txt-cl);
-                                                                                                             margin: 0;
-                                                                                                             padding-bottom: 16px;
-                                                                                                         }
-                                                                                                         /* СТИЛЬ ІКОНОК СОЦІАЛЬНИХ МЕРЕЖ */
-                                                                                                         
-                                                                                                         .team-social {
-                                                                                                             height: 44px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team-social .link {
-                                                                                                             transition: color var(--anim-slow), background-color var(--anim-slow);
-                                                                                                             transition-delay: 300ms;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team-social-icon {
-                                                                                                             fill: var(--fourth-ico-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team-social-item:not(:last-child) {
-                                                                                                             margin-right: 10px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .team-social-item {
-                                                                                                             width: 44px;
-                                                                                                             height: 44px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .link {
-                                                                                                             display: flex;
-                                                                                                             justify-content: center;
-                                                                                                             align-items: center;
-                                                                                                             border: 1px solid var(--secondary-cl);
-                                                                                                             background-color: var(--fifth-bg-cl);
-                                                                                                             border-radius: 50%;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .link:focus,
-                                                                                                         .link:hover {
-                                                                                                             background-color: var(--thirty-bg-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .link:focus>.team-social-icon,
-                                                                                                         .link:hover>.team-social-icon {
-                                                                                                             fill: var(--thirty-ico-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .list {
-                                                                                                             display: flex;
-                                                                                                             justify-content: center;
-                                                                                                             align-items: center;
-                                                                                                             transition: color var(--anim-slow);
-                                                                                                         }
-                                                                                                         /*СТИЛЬ СЕКЦІЇ PARTNERS*/
-                                                                                                         
-                                                                                                         .partners {
-                                                                                                             padding: 94px 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .client-list {
-                                                                                                             display: flex;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .client-item {
-                                                                                                             width: 170px;
-                                                                                                             height: 92px;
-                                                                                                             border: 1px solid #AFB1B8;
-                                                                                                             border-radius: 4px;
-                                                                                                             display: flex;
-                                                                                                             justify-content: center;
-                                                                                                             align-items: center;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .client-item>.client {
-                                                                                                             transition: fill var(--anim-slow);
-                                                                                                             transition-delay: 300ms;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .client-item:not(:last-child) {
-                                                                                                             margin-right: 30px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .client-item:hover>.client,
-                                                                                                         .client-item:focus>.client {
-                                                                                                             fill: var(--secondary-ico-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .client-item:hover,
-                                                                                                         .client-item:focus {
-                                                                                                             border-color: var(--thirty-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .client {
-                                                                                                             fill: var(--fourth-ico-cl);
-                                                                                                         }
-                                                                                                         /* СТИЛЬ СЕКЦІЇ FOOTER*/
-                                                                                                         
-                                                                                                         .foot {
-                                                                                                             background-color: var(--sixth_bg-cl);
-                                                                                                             padding: 60px 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .lg-foot {
-                                                                                                             font-family: var(--secondary-font);
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 26px;
-                                                                                                             line-height: 1.19;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: var(--thirty-txt-cl);
-                                                                                                             padding-bottom: 20px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .lg-foot-txt {
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .adress-foot {
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                             font-style: normal;
-                                                                                                             font-weight: 400;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.71;
-                                                                                                             padding-top: 20px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .foot-map {
-                                                                                                             font-weight: 400;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.71;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                             padding-bottom: 9px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .foot-mail,
-                                                                                                         .foot-number {
-                                                                                                             font-weight: 400;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.71;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: rgba(255, 255, 255, 0.6);
-                                                                                                             padding-bottom: 9px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .foot-container {
-                                                                                                             display: flex;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .subscribe {
-                                                                                                             display: flex;
-                                                                                                             margin-left: 93px;
-                                                                                                             flex-direction: column;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .subscribe-txt {
-                                                                                                             display: inline-block;
-                                                                                                             margin-bottom: 20px;
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 1.14;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             text-transform: uppercase;
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .foot-form {
-                                                                                                             display: flex;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .foot-form-input {
-                                                                                                             border: 1px solid #ffffff4d;
-                                                                                                             filter: drop-shadow(0px 4px 4px #00000026);
-                                                                                                             border-radius: 4px;
-                                                                                                             width: 358px;
-                                                                                                             background-color: inherit;
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .subscribe-btn {
-                                                                                                             margin-left: 12px;
-                                                                                                             position: relative;
-                                                                                                             width: 200px;
-                                                                                                             padding: 10px 29px;
-                                                                                                             box-shadow: 0px 4px 4px #00000026;
-                                                                                                             border-radius: 4px;
-                                                                                                             border: 0;
-                                                                                                             background-color: var(--secondary-bg-cl);
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 16px;
-                                                                                                             line-height: 1.87;
-                                                                                                             display: flex;
-                                                                                                             align-items: center;
-                                                                                                             text-align: center;
-                                                                                                             letter-spacing: 0.06em;
-                                                                                                             color: var(--secondary-txt-cl)
-                                                                                                         }
-                                                                                                         /* СТИЛЬ ІКОНОК У FOOTERi*/
-                                                                                                         
-                                                                                                         .subscribe-svg {
-                                                                                                             position: absolute;
-                                                                                                             fill: var(--thirty-ico-cl);
-                                                                                                             top: 13px;
-                                                                                                             right: 28px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .social-icons {
-                                                                                                             margin-left: 70px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .social-icons-txt {
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                             font-style: normal;
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 14px;
-                                                                                                             line-height: 16px;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             text-transform: uppercase;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .social-icons-list {
-                                                                                                             display: flex;
-                                                                                                             align-items: center;
-                                                                                                             margin-top: 16px;
-                                                                                                             width: auto;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .social-link {
-                                                                                                             transition: background-color var(--anim-slow);
-                                                                                                             transition-delay: 300ms;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .social-icon-item:not(:last-child) {
-                                                                                                             margin-right: 10px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .social-link {
-                                                                                                             display: flex;
-                                                                                                             width: 44px;
-                                                                                                             height: 44px;
-                                                                                                             justify-content: center;
-                                                                                                             border-radius: 50%;
-                                                                                                             background-color: #ffffff1a;
-                                                                                                             align-items: center;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .social-link:hover,
-                                                                                                         .social-link:focus {
-                                                                                                             background-color: var(--secondary-bg-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .media-link {
-                                                                                                             fill: var(--thirty-ico-cl);
-                                                                                                         }
-                                                                                                         /* СТИЛЬ ПОРТФОЛІО*/
-                                                                                                         /* СТИЛЬ ФІЛЬТРУ*/
-                                                                                                         
-                                                                                                         .filtr {
-                                                                                                             display: flex;
-                                                                                                             justify-content: center;
-                                                                                                             margin-bottom: 50px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .btn-filtr {
-                                                                                                             background-color: var(--fourth-bg-cl);
-                                                                                                             border-radius: 4px;
-                                                                                                             font-weight: 500;
-                                                                                                             font-size: 16px;
-                                                                                                             padding: 6px 22px;
-                                                                                                             text-align: center;
-                                                                                                             border: none;
-                                                                                                             display: block;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .btn-li {
-                                                                                                             margin: 0;
-                                                                                                             padding: 0;
-                                                                                                             box-shadow: none;
-                                                                                                             background-color: var(--fifth-bg-cl);
-                                                                                                             margin-right: 8px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .btn:not(:last-child) {
-                                                                                                             margin: 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .current-2:hover,
-                                                                                                         .current-2:focus {
-                                                                                                             background-color: var(--secondary-bg-cl);
-                                                                                                             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-                                                                                                             border-radius: 4px;
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                         }
-                                                                                                         /*СТИЛЬ СЕКЦІЇ PROJECTS*/
-                                                                                                         
-                                                                                                         .project-name {
-                                                                                                             padding: 20px 24px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .title-project {
-                                                                                                             font-size: 18px;
-                                                                                                             line-height: 2;
-                                                                                                             letter-spacing: 0.06em;
-                                                                                                             color: var(--main-txt-cl);
-                                                                                                             margin-bottom: 4px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .subtitle-project {
-                                                                                                             font-weight: 400;
-                                                                                                             font-size: 16px;
-                                                                                                             line-height: 1.87;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             color: var(--fourth-txt-cl);
-                                                                                                             margin: 0;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .projects {
-                                                                                                             display: flex;
-                                                                                                             flex-wrap: wrap;
-                                                                                                             margin: -15px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .project {
-                                                                                                             box-sizing: border-box;
-                                                                                                             background-color: var(--fifth-bg-cl);
-                                                                                                             border: 1px solid #EEEEEE;
-                                                                                                             margin: 15px;
-                                                                                                             width: calc(100% / 3 - 30px);
-                                                                                                             position: relative;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .project:focus,
-                                                                                                         .project:hover {
-                                                                                                             box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .project:hover .desc {
-                                                                                                             transform: translateY(0);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .photo-project {
-                                                                                                             overflow: hidden;
-                                                                                                             position: relative;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .desc {
-                                                                                                             position: absolute;
-                                                                                                             left: 0;
-                                                                                                             top: 0;
-                                                                                                             transform: translateY(102%);
-                                                                                                             display: flex;
-                                                                                                             align-items: center;
-                                                                                                             justify-content: center;
-                                                                                                             background-color: #2196F3E5;
-                                                                                                             padding: 65px 24px;
-                                                                                                             transition: transform var(--anim-fast);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .desc-txt {
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                             font-weight: 400;
-                                                                                                             font-size: 18px;
-                                                                                                             line-height: 1.5;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                         }
-                                                                                                         /*Styles MODAL WINDOWS*/
-                                                                                                         
-                                                                                                         .backdrop {
-                                                                                                             position: fixed;
-                                                                                                             top: 0;
-                                                                                                             left: 0;
-                                                                                                             width: 100%;
-                                                                                                             height: 100%;
-                                                                                                             background-color: #00000033;
-                                                                                                             opacity: 1;
-                                                                                                             visibility: visible;
-                                                                                                             pointer-events: initial;
-                                                                                                             transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .backdrop.is-hidden {
-                                                                                                             opacity: 0;
-                                                                                                             visibility: hidden;
-                                                                                                             pointer-events: none;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .modal {
-                                                                                                             position: absolute;
-                                                                                                             top: 50%;
-                                                                                                             left: 50%;
-                                                                                                             transform: translate(-50%, -50%);
-                                                                                                             min-height: 581px;
-                                                                                                             min-width: 528px;
-                                                                                                             background-color: #FFFFFF;
-                                                                                                             box-shadow: 4px 4px 8px #00000033;
-                                                                                                             border-radius: 4px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .btn-close-modal {
-                                                                                                             position: absolute;
-                                                                                                             top: 8px;
-                                                                                                             right: 8px;
-                                                                                                             display: flex;
-                                                                                                             justify-content: center;
-                                                                                                             align-items: center;
-                                                                                                             height: 30px;
-                                                                                                             width: 30px;
-                                                                                                             border-radius: 50%;
-                                                                                                             padding: 0;
-                                                                                                             border: 1px solid #0000001A;
-                                                                                                             cursor: pointer;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .forma {
-                                                                                                             padding: 40px;
-                                                                                                             justify-content: center;
-                                                                                                             align-items: center;
-                                                                                                             flex-direction: column;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .ttl-form {
-                                                                                                             font-weight: 700;
-                                                                                                             font-size: 20px;
-                                                                                                             line-height: 1.15;
-                                                                                                             text-align: center;
-                                                                                                             letter-spacing: 0.03em;
-                                                                                                             align-items: center;
-                                                                                                             margin-bottom: 12px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .mdl-lbl {
-                                                                                                             font-weight: 400;
-                                                                                                             font-size: 12px;
-                                                                                                             line-height: 1.16;
-                                                                                                             letter-spacing: 0.01em;
-                                                                                                             color: var(--fourth-txt-cl);
-                                                                                                             margin-bottom: 4px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .form-ico {
-                                                                                                             display: flex;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .mdl-input {
-                                                                                                             display: block;
-                                                                                                             margin-bottom: 10px;
-                                                                                                             width: 100%;
-                                                                                                             height: 40px;
-                                                                                                             border: 1px solid #21212133;
-                                                                                                             border-radius: 4px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .icon-form {
-                                                                                                             position: absolute;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .mdl-input-checkbox {
-                                                                                                             border: 1px solid rgba(33, 33, 33, 0.2);
-                                                                                                             border-radius: 4px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .btn-send-form {
-                                                                                                             display: flex;
-                                                                                                             margin-top: 30px;
-                                                                                                             margin-left: auto;
-                                                                                                             margin-right: auto;
-                                                                                                             background: var(--secondary-bg-cl);
-                                                                                                             border-radius: 4px;
-                                                                                                             border: 0;
-                                                                                                             color: var(--secondary-txt-cl);
-                                                                                                             padding: 10px 55px 10px 56px;
-                                                                                                             justify-content: center;
-                                                                                                             align-items: center;
-                                                                                                             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .mdl-txtarea {}
-                                                                                                         
-                                                                                                         .mdl-lbl-feedback {
-                                                                                                             font-weight: 400;
-                                                                                                             font-size: 12px;
-                                                                                                             line-height: 1.16;
-                                                                                                             letter-spacing: 0.01em;
-                                                                                                             color: var(--fourth-txt-cl);
-                                                                                                         }
-                                                                                                         
-                                                                                                         .mdl-feedback {
-                                                                                                             display: block;
-                                                                                                             font-size: 12px;
-                                                                                                         }
-                                                                                                         
-                                                                                                         .mdl-feedback-txtarea {
-                                                                                                             line-height: 14px;
-                                                                                                             letter-spacing: 0.01em;
-                                                                                                             color: rgba(117, 117, 117, 0.5);
-                                                                                                             width: 100%;
-                                                                                                             height: 120px;
-                                                                                                             padding: 12px 16px;
-                                                                                                         }
+                                             :root {
+                                                /* FONTS */
+                                                --main-fonts: "Roboto", sans-serif;
+                                                --secondary-font: "Raleway", sans-serif;
+                                                /* TXT CL */
+                                                --main-txt-cl: #212121;
+                                                --secondary-txt-cl: #FFFFFF;
+                                                --thirty-txt-cl: #2196F3;
+                                                --fourth-txt-cl: #757575;
+                                                /* BG CL */
+                                                --main-bg-cl: #23242C;
+                                                --secondary-bg-cl: #2196F3;
+                                                --thirty-bg-cl: #188CE8;
+                                                --fourth-bg-cl: #F5F4FA;
+                                                --fifth-bg-cl: #FFFFFF;
+                                                --sixth_bg-cl: #2F303A;
+                                                /* OTHERS */
+                                                --main-cl: #212121;
+                                                --secondary-cl: #FFFFFF;
+                                                --thirty-cl: #2196F3;
+                                                /* ICO CL */
+                                                --main-ico-cl: #757575;
+                                                --secondary-ico-cl: #2196F3;
+                                                --thirty-ico-cl: #FFFFFF;
+                                                --fourth-ico-cl: #AFB1B8;
+                                                /* таблиця для портфоліо */
+                                                --items: 3;
+                                                --indent: 30px;
+                                                /* ANIMATION */
+                                                --anim-slow: 600ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                --anim-fast: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+                                            }
+                                            /* Styles SPECIAL */
+                                            
+                                            .no-scroll {
+                                                overflow: hidden;
+                                            }
+                                            /* ТІЛО ГОЛОВНОЇ СТОРІНКИ ТА ПОРТФОЛІО*/
+                                            
+                                            .body {
+                                                font-family: var(--main-fonts);
+                                                font-style: normal;
+                                            }
+                                            
+                                            li {
+                                                list-style-type: none;
+                                            }
+                                            
+                                            a {
+                                                text-decoration: none;
+                                            }
+                                            
+                                            ul,
+                                            div,
+                                            h2,
+                                            p {
+                                                margin: 0;
+                                                padding: 0;
+                                            }
+                                            
+                                            img {
+                                                width: 100%;
+                                                height: auto;
+                                            }
+                                            
+                                            .container {
+                                                width: 1200px;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                padding-left: 15px;
+                                                padding-right: 15px;
+                                            }
+                                            
+                                            .portfolio-main {
+                                                padding: 94px 0;
+                                            }
+                                            /* СТИЛЬ ЛОГОТИПА У ШАПЦІ САЙТУ */
+                                            
+                                            .lg {
+                                                font-family: var(--secondary-font);
+                                                font-weight: 700;
+                                                font-size: 26px;
+                                                line-height: 1.19;
+                                                letter-spacing: 0.03em;
+                                                color: var(--thirty-txt-cl);
+                                                margin-top: 24px;
+                                            }
+                                            
+                                            .lg-txt {
+                                                color: var(--main-txt-cl);
+                                            }
+                                            /* СТИЛЬ ШАПКИ САЙТУ */
+                                            
+                                            header {
+                                                border-bottom: 1px solid #ECECEC;
+                                            }
+                                            
+                                            .head-cont {
+                                                display: flex;
+                                            }
+                                            
+                                            .nav-page {
+                                                display: flex;
+                                                margin-left: 93px;
+                                            }
+                                            
+                                            .navlink {
+                                                display: block;
+                                                font-weight: 500;
+                                                font-size: 14px;
+                                                line-height: 1.14;
+                                                letter-spacing: 0.02em;
+                                                color: var(--main-txt-cl);
+                                                transition: color var(--anim-slow), background-color var(--anim-slow);
+                                                padding: 32px 0;
+                                            }
+                                            
+                                            .nav-link {
+                                                margin-right: 50px;
+                                            }
+                                            
+                                            .nav-link:last-child {
+                                                margin-right: 0;
+                                            }
+                                            
+                                            .navlink a:hover,
+                                            .navlink a:focus {
+                                                color: var(--thirty-txt-cl);
+                                            }
+                                            
+                                            .current {
+                                                position: relative;
+                                                color: var(--thirty-txt-cl);
+                                            }
+                                            
+                                            .current::after {
+                                                content: "";
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 4px;
+                                                border-radius: 4px;
+                                                background: var(--thirty-cl);
+                                                left: 0;
+                                                bottom: 0;
+                                            }
+                                            
+                                            .contacts {
+                                                display: flex;
+                                                margin-left: auto;
+                                                padding: 32px 0;
+                                            }
+                                            
+                                            .head-mail,
+                                            .head-number {
+                                                font-weight: 500;
+                                                font-size: 14px;
+                                                line-height: 1.14;
+                                                letter-spacing: 0.02em;
+                                                color: var(--fourth-txt-cl);
+                                                padding-right: 50px;
+                                                display: flex;
+                                                transition: color var(--anim-slow);
+                                            }
+                                            
+                                            .head-number {
+                                                padding-right: 0;
+                                            }
+                                            
+                                            .head-mail:hover,
+                                            .head-mail:focus,
+                                            .head-number:hover,
+                                            .head-number:focus {
+                                                color: var(--thirty-txt-cl);
+                                            }
+                                            
+                                            .icon-email,
+                                            .icon-tel {
+                                                margin-right: 10px;
+                                                fill: var(--main-ico-cl);
+                                                transition: fill var(--anim-slow);
+                                            }
+                                            
+                                            .icon-email {
+                                                margin-top: 2px;
+                                            }
+                                            
+                                            .head-mail:hover>.icon-email,
+                                            .head-mail:focus>.icon-email,
+                                            .head-number:hover>.icon-tel,
+                                            .head-number:focus>.icon-tel {
+                                                fill: var(--secondary-ico-cl);
+                                            }
+                                            /* СТИЛЬ 1-Ї СЕКЦІЇ */
+                                            
+                                            .title {
+                                                background-color: var(--main-bg-cl);
+                                                background-image: url(../images/img-bg/main-img.png);
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                background-size: cover;
+                                                max-width: 1600px;
+                                                max-height: 600px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                padding: 200px 0;
+                                                margin: 0 auto;
+                                            }
+                                            
+                                            .main-title {
+                                                font-weight: 900;
+                                                font-size: 44px;
+                                                line-height: 1.36;
+                                                text-align: center;
+                                                letter-spacing: 0.06em;
+                                                text-transform: uppercase;
+                                                color: var(--secondary-txt-cl);
+                                                margin: 0;
+                                                margin-bottom: 30px;
+                                                max-width: 696px;
+                                                margin-right: auto;
+                                                margin-left: auto;
+                                            }
+                                            
+                                            .btn {
+                                                background-color: var(--secondary-bg-cl);
+                                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.149);
+                                                border-radius: 4px;
+                                                color: var(--secondary-txt-cl);
+                                                font-weight: 700;
+                                                font-size: 16px;
+                                                line-height: 2;
+                                                text-align: center;
+                                                letter-spacing: 0.06em;
+                                                padding: 10px 32px;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                cursor: pointer;
+                                                transition: background-color var(--anim-slow);
+                                            }
+                                            
+                                            .btn:hover,
+                                            .btn:focus {
+                                                background-color: var(--thirty-bg-cl);
+                                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                                                border-radius: 4px;
+                                                color: var(--secondary-txt-cl);
+                                                font-weight: 700;
+                                                font-size: 16px;
+                                                line-height: 2;
+                                                text-align: center;
+                                                letter-spacing: 0.06em;
+                                                padding: 10px 32px;
+                                            }
+                                            /* СТИЛЬ СЕКЦІЇ ПЕРЕВАГИ */
+                                            
+                                            .advantage {
+                                                font-size: 14px;
+                                                line-height: 1.14;
+                                                letter-spacing: 0.03em;
+                                                color: var(--main-txt-cl);
+                                                padding: 94px 0;
+                                            }
+                                            
+                                            .advan-list {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                width: 1170px;
+                                                gap: 30px;
+                                            }
+                                            
+                                            .advan-item {
+                                                width: calc(100% / 3 - 30px);
+                                                margin: 0;
+                                                display: block;
+                                            }
+                                            
+                                            .advan-ico {
+                                                width: 270px;
+                                                height: 120px;
+                                                background-color: var(--fourth-bg-cl);
+                                                margin-bottom: 30px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                            
+                                            .advantage-ico {
+                                                width: 70px;
+                                                height: 70px;
+                                            }
+                                            
+                                            .advan-title {
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 1.14;
+                                                letter-spacing: 0.03em;
+                                                text-transform: uppercase;
+                                                color: var(--main-txt-cl);
+                                                margin: 0;
+                                                margin-bottom: 10px;
+                                            }
+                                            
+                                            .advan-txt {
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 1.7;
+                                                letter-spacing: 0.03em;
+                                                color: var(--fourth-txt-cl);
+                                                margin: 0;
+                                            }
+                                            /* СТИЛЬ СЕКЦІЇЇ ЧИМ МИ ЗАЙМАЄМОСЬ */
+                                            
+                                            .title-h2 {
+                                                font-weight: 700;
+                                                font-size: 36px;
+                                                line-height: 1.17;
+                                                text-align: center;
+                                                letter-spacing: 0.03em;
+                                                color: var(--main-txt-cl);
+                                                padding-bottom: 50px;
+                                            }
+                                            
+                                            .work {
+                                                padding-bottom: 94px;
+                                            }
+                                            
+                                            .works {
+                                                display: flex;
+                                                margin: -15px;
+                                                margin-right: auto;
+                                                margin-left: auto;
+                                            }
+                                            
+                                            .works:not(:last-child) {
+                                                margin: 0;
+                                            }
+                                            
+                                            .worked {
+                                                position: relative;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                            
+                                            .work-img {
+                                                width: calc(100% / 3 - 30px);
+                                                margin: 15px;
+                                            }
+                                            
+                                            .work-name {
+                                                position: absolute;
+                                                top: 216px;
+                                                color: var(--secondary-txt-cl);
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 1.14;
+                                                text-align: center;
+                                                letter-spacing: 0.03em;
+                                                text-transform: uppercase;
+                                                background: #2f303acc;
+                                                padding-top: 28px;
+                                                width: 360px;
+                                                height: 70px;
+                                                min-height: 16px;
+                                            }
+                                            /* СТИЛЬ СЕКЦІЇ НАША КОМАНДА */
+                                            
+                                            .team-list {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                margin: -15px;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .team {
+                                                background-color: var(--fourth-bg-cl);
+                                                padding: 94px 0;
+                                            }
+                                            
+                                            .team-list:not(:last-child) {
+                                                margin: 0;
+                                            }
+                                            
+                                            .team-item {
+                                                background-color: var(--fifth-bg-cl);
+                                                box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
+                                                border-radius: 0px 0px 4px 4px;
+                                                flex-basis: calc(100% / 4 - 30px);
+                                                margin: 15px;
+                                            }
+                                            
+                                            .team-name {
+                                                padding: 30px 0;
+                                            }
+                                            
+                                            .team-title {
+                                                font-weight: 500;
+                                                font-size: 16px;
+                                                line-height: 1.18;
+                                                text-align: center;
+                                                letter-spacing: 0.03em;
+                                                color: var(--main-txt-cl);
+                                                margin: 0;
+                                                margin-bottom: 10px;
+                                            }
+                                            
+                                            .team-txt {
+                                                font-weight: 400;
+                                                font-size: 16px;
+                                                line-height: 1.18;
+                                                text-align: center;
+                                                letter-spacing: 0.03em;
+                                                color: var(--fourth-txt-cl);
+                                                margin: 0;
+                                                padding-bottom: 16px;
+                                            }
+                                            /* СТИЛЬ ІКОНОК СОЦІАЛЬНИХ МЕРЕЖ */
+                                            
+                                            .team-social {
+                                                height: 44px;
+                                            }
+                                            
+                                            .team-social .link {
+                                                transition: color var(--anim-slow), background-color var(--anim-slow);
+                                                transition-delay: 300ms;
+                                            }
+                                            
+                                            .team-social-icon {
+                                                fill: var(--fourth-ico-cl);
+                                            }
+                                            
+                                            .team-social-item:not(:last-child) {
+                                                margin-right: 10px;
+                                            }
+                                            
+                                            .team-social-item {
+                                                width: 44px;
+                                                height: 44px;
+                                            }
+                                            
+                                            .link {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border: 1px solid var(--secondary-cl);
+                                                background-color: var(--fifth-bg-cl);
+                                                border-radius: 50%;
+                                            }
+                                            
+                                            .link:focus,
+                                            .link:hover {
+                                                background-color: var(--thirty-bg-cl);
+                                            }
+                                            
+                                            .link:focus>.team-social-icon,
+                                            .link:hover>.team-social-icon {
+                                                fill: var(--thirty-ico-cl);
+                                            }
+                                            
+                                            .list {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                transition: color var(--anim-slow);
+                                            }
+                                            /*СТИЛЬ СЕКЦІЇ PARTNERS*/
+                                            
+                                            .partners {
+                                                padding: 94px 0;
+                                            }
+                                            
+                                            .client-list {
+                                                display: flex;
+                                            }
+                                            
+                                            .client-item {
+                                                width: 170px;
+                                                height: 92px;
+                                                border: 1px solid #AFB1B8;
+                                                border-radius: 4px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                            
+                                            .client-item>.client {
+                                                transition: fill var(--anim-slow);
+                                                transition-delay: 300ms;
+                                            }
+                                            
+                                            .client-item:not(:last-child) {
+                                                margin-right: 30px;
+                                            }
+                                            
+                                            .client-item:hover>.client,
+                                            .client-item:focus>.client {
+                                                fill: var(--secondary-ico-cl);
+                                            }
+                                            
+                                            .client-item:hover,
+                                            .client-item:focus {
+                                                border-color: var(--thirty-cl);
+                                            }
+                                            
+                                            .client {
+                                                fill: var(--fourth-ico-cl);
+                                            }
+                                            /* СТИЛЬ СЕКЦІЇ FOOTER*/
+                                            
+                                            .foot {
+                                                background-color: var(--sixth_bg-cl);
+                                                padding: 60px 0;
+                                            }
+                                            
+                                            .lg-foot {
+                                                font-family: var(--secondary-font);
+                                                font-weight: 700;
+                                                font-size: 26px;
+                                                line-height: 1.19;
+                                                letter-spacing: 0.03em;
+                                                color: var(--thirty-txt-cl);
+                                                padding-bottom: 20px;
+                                            }
+                                            
+                                            .lg-foot-txt {
+                                                color: var(--secondary-txt-cl);
+                                            }
+                                            
+                                            .adress-foot {
+                                                color: var(--secondary-txt-cl);
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 1.71;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            .foot-map {
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 1.71;
+                                                letter-spacing: 0.03em;
+                                                color: var(--secondary-txt-cl);
+                                                padding-bottom: 9px;
+                                            }
+                                            
+                                            .foot-mail,
+                                            .foot-number {
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 1.71;
+                                                letter-spacing: 0.03em;
+                                                color: rgba(255, 255, 255, 0.6);
+                                                padding-bottom: 9px;
+                                            }
+                                            
+                                            .foot-container {
+                                                display: flex;
+                                            }
+                                            
+                                            .subscribe {
+                                                display: flex;
+                                                margin-left: 93px;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .subscribe-txt {
+                                                display: inline-block;
+                                                margin-bottom: 20px;
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 1.14;
+                                                letter-spacing: 0.03em;
+                                                text-transform: uppercase;
+                                                color: var(--secondary-txt-cl);
+                                            }
+                                            
+                                            .foot-form {
+                                                display: flex;
+                                            }
+                                            
+                                            .foot-form-input {
+                                                padding-left: 16px;
+                                                border: 1px solid #ffffff4d;
+                                                filter: drop-shadow(0px 4px 4px #00000026);
+                                                border-radius: 4px;
+                                                width: 358px;
+                                                background-color: inherit;
+                                                color: var(--secondary-txt-cl);
+                                            }
+                                            
+                                            .subscribe-btn {
+                                                margin-left: 12px;
+                                                position: relative;
+                                                width: 200px;
+                                                padding: 10px 29px;
+                                                box-shadow: 0px 4px 4px #00000026;
+                                                border-radius: 4px;
+                                                border: 0;
+                                                background-color: var(--secondary-bg-cl);
+                                                font-weight: 700;
+                                                font-size: 16px;
+                                                line-height: 1.87;
+                                                display: flex;
+                                                align-items: center;
+                                                text-align: center;
+                                                letter-spacing: 0.06em;
+                                                color: var(--secondary-txt-cl)
+                                            }
+                                            /* СТИЛЬ ІКОНОК У FOOTERi*/
+                                            
+                                            .subscribe-svg {
+                                                position: absolute;
+                                                fill: var(--thirty-ico-cl);
+                                                top: 13px;
+                                                right: 28px;
+                                            }
+                                            
+                                            .social-icons {
+                                                margin-left: 70px;
+                                            }
+                                            
+                                            .social-icons-txt {
+                                                color: var(--secondary-txt-cl);
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                letter-spacing: 0.03em;
+                                                text-transform: uppercase;
+                                            }
+                                            
+                                            .social-icons-list {
+                                                display: flex;
+                                                align-items: center;
+                                                margin-top: 16px;
+                                                width: auto;
+                                            }
+                                            
+                                            .social-link {
+                                                transition: background-color var(--anim-slow);
+                                                transition-delay: 300ms;
+                                            }
+                                            
+                                            .social-icon-item:not(:last-child) {
+                                                margin-right: 10px;
+                                            }
+                                            
+                                            .social-link {
+                                                display: flex;
+                                                width: 44px;
+                                                height: 44px;
+                                                justify-content: center;
+                                                border-radius: 50%;
+                                                background-color: #ffffff1a;
+                                                align-items: center;
+                                            }
+                                            
+                                            .social-link:hover,
+                                            .social-link:focus {
+                                                background-color: var(--secondary-bg-cl);
+                                            }
+                                            
+                                            .media-link {
+                                                fill: var(--thirty-ico-cl);
+                                            }
+                                            /* СТИЛЬ ПОРТФОЛІО*/
+                                            /* СТИЛЬ ФІЛЬТРУ*/
+                                            
+                                            .filtr {
+                                                display: flex;
+                                                justify-content: center;
+                                                margin-bottom: 50px;
+                                            }
+                                            
+                                            .btn-filtr {
+                                                background-color: var(--fourth-bg-cl);
+                                                border-radius: 4px;
+                                                font-weight: 500;
+                                                font-size: 16px;
+                                                padding: 6px 22px;
+                                                text-align: center;
+                                                border: none;
+                                                display: block;
+                                            }
+                                            
+                                            .btn-li {
+                                                margin: 0;
+                                                padding: 0;
+                                                box-shadow: none;
+                                                background-color: var(--fifth-bg-cl);
+                                                margin-right: 8px;
+                                            }
+                                            
+                                            .btn:not(:last-child) {
+                                                margin: 0;
+                                            }
+                                            
+                                            .current-2:hover,
+                                            .current-2:focus {
+                                                background-color: var(--secondary-bg-cl);
+                                                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                                                border-radius: 4px;
+                                                color: var(--secondary-txt-cl);
+                                            }
+                                            /*СТИЛЬ СЕКЦІЇ PROJECTS*/
+                                            
+                                            .project-name {
+                                                padding: 20px 24px;
+                                            }
+                                            
+                                            .title-project {
+                                                font-size: 18px;
+                                                line-height: 2;
+                                                letter-spacing: 0.06em;
+                                                color: var(--main-txt-cl);
+                                                margin-bottom: 4px;
+                                            }
+                                            
+                                            .subtitle-project {
+                                                font-weight: 400;
+                                                font-size: 16px;
+                                                line-height: 1.87;
+                                                letter-spacing: 0.03em;
+                                                color: var(--fourth-txt-cl);
+                                                margin: 0;
+                                            }
+                                            
+                                            .projects {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                margin: -15px;
+                                            }
+                                            
+                                            .project {
+                                                box-sizing: border-box;
+                                                background-color: var(--fifth-bg-cl);
+                                                border: 1px solid #EEEEEE;
+                                                margin: 15px;
+                                                width: calc(100% / 3 - 30px);
+                                                position: relative;
+                                            }
+                                            
+                                            .project:focus,
+                                            .project:hover {
+                                                box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+                                            }
+                                            
+                                            .project:hover .desc {
+                                                transform: translateY(0);
+                                            }
+                                            
+                                            .photo-project {
+                                                overflow: hidden;
+                                                position: relative;
+                                            }
+                                            
+                                            .desc {
+                                                position: absolute;
+                                                left: 0;
+                                                top: 0;
+                                                transform: translateY(102%);
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                background-color: #2196F3E5;
+                                                padding: 65px 24px;
+                                                transition: transform var(--anim-fast);
+                                            }
+                                            
+                                            .desc-txt {
+                                                color: var(--secondary-txt-cl);
+                                                font-weight: 400;
+                                                font-size: 18px;
+                                                line-height: 1.5;
+                                                letter-spacing: 0.03em;
+                                            }
+                                            /*Styles MODAL WINDOWS*/
+                                            
+                                            .backdrop {
+                                                position: fixed;
+                                                top: 0;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                background-color: #00000033;
+                                                opacity: 1;
+                                                visibility: visible;
+                                                pointer-events: initial;
+                                                transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+                                            }
+                                            
+                                            .backdrop.is-hidden {
+                                                opacity: 0;
+                                                visibility: hidden;
+                                                pointer-events: none;
+                                            }
+                                            
+                                            .modal {
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%, -50%);
+                                                min-height: 581px;
+                                                min-width: 528px;
+                                                background-color: #FFFFFF;
+                                                box-shadow: 4px 4px 8px #00000033;
+                                                border-radius: 4px;
+                                            }
+                                            
+                                            .btn-close-modal {
+                                                position: absolute;
+                                                top: 8px;
+                                                right: 8px;
+                                                display: flex;
+                                                background-color: transparent;
+                                                justify-content: center;
+                                                align-items: center;
+                                                height: 30px;
+                                                width: 30px;
+                                                border-radius: 50%;
+                                                padding: 0;
+                                                border: 1px solid #0000001A;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .btn-close-modal:hover>.btn-close {
+                                                fill: var(--secondary-ico-cl);
+                                            }
+                                            
+                                            .forma {
+                                                padding: 40px;
+                                                justify-content: center;
+                                                align-items: center;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .ttl-form {
+                                                font-weight: 700;
+                                                font-size: 20px;
+                                                line-height: 1.15;
+                                                text-align: center;
+                                                letter-spacing: 0.03em;
+                                                align-items: center;
+                                                margin-bottom: 12px;
+                                            }
+                                            
+                                            .mdl-lbl {
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.16;
+                                                letter-spacing: 0.01em;
+                                                color: var(--fourth-txt-cl);
+                                            }
+                                            
+                                            .form-ico {
+                                                display: flex;
+                                                position: relative;
+                                                margin-top: 4px;
+                                                margin-bottom: 10px;
+                                            }
+                                            
+                                            .mdl-input {
+                                                width: 100%;
+                                                height: 40px;
+                                                border: 1px solid #21212133;
+                                                border-radius: 4px;
+                                                padding-left: 42px;
+                                            }
+                                            
+                                            .icon-form-1 {
+                                                top: 14px;
+                                                left: 15px;
+                                            }
+                                            
+                                            .icon-form-2 {
+                                                top: 13px;
+                                                left: 14px;
+                                            }
+                                            
+                                            .icon-form-3 {
+                                                top: 14px;
+                                                left: 13.5px;
+                                            }
+                                            
+                                            .icon-form-1,
+                                            .icon-form-2,
+                                            .icon-form-3 {
+                                                position: absolute;
+                                            }
+                                            
+                                            .mdl-input-checkbox {
+                                                border: 1px solid rgba(33, 33, 33, 0.2);
+                                                border-radius: 4px;
+                                            }
+                                            
+                                            .btn-send-form {
+                                                display: flex;
+                                                margin-top: 30px;
+                                                margin-left: auto;
+                                                margin-right: auto;
+                                                background: var(--secondary-bg-cl);
+                                                border-radius: 4px;
+                                                border: 0;
+                                                color: var(--secondary-txt-cl);
+                                                padding: 10px 55px 10px 56px;
+                                                justify-content: center;
+                                                align-items: center;
+                                                font-weight: 700;
+                                                font-size: 16px;
+                                                line-height: 1.87;
+                                                letter-spacing: 0.06em;
+                                            }
+                                            
+                                            .btn-send-form:hover {
+                                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                                                background-color: var(--thirty-bg-cl);
+                                            }
+                                            
+                                            .mdl-feedback-enter {
+                                                max-width: 100%;
+                                                height: 120px;
+                                                border: 1px solid rgba(33, 33, 33, 0.2);
+                                                border-radius: 4px;
+                                                margin-bottom: 20px;
+                                            }
+                                            
+                                            .mdl-lbl-feedback {
+                                                margin-bottom: 4px;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                line-height: 1.16;
+                                                letter-spacing: 0.01em;
+                                                color: var(--fourth-txt-cl);
+                                            }
+                                            
+                                            .mdl-feedback {
+                                                display: flex;
+                                                font-size: 12px;
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .mdl-txtarea {
+                                                font-weight: 400;
+                                                line-height: 14px;
+                                                letter-spacing: 0.01em;
+                                                color: var(--thirty-txt-cl);
+                                                width: 100%;
+                                                height: 120px;
+                                                text-decoration: underline;
+                                            }
+                                            
+                                            .checkbox-lbl {
+                                                color: var(--fourth-txt-cl);
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 1.71;
+                                                letter-spacing: 0.03em;
+                                            }
+                                            
+                                            .form-ico:hover .icon-form-1,
+                                            .form-ico:focus .icon-form-1,
+                                            .form-ico:hover .icon-form-2,
+                                            .form-ico:focus .icon-form-2,
+                                            .form-ico:hover .icon-form-3,
+                                            .form-ico:focus .icon-form-3 {
+                                                fill: var(--secondary-ico-cl);
+                                            }
+                                            
+                                            .mdl-input:hover {
+                                                border-color: var(--thirty-cl);
+                                            }
